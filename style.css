@@ -1,0 +1,393 @@
+body {
+    background-color: #E2DFD0;
+    box-sizing: border-box;
+
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5rem;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+ul li {
+    font-size: 16px;
+    font-weight: lighter;
+    color: black;
+}
+
+ul li i {
+    color: #F97300;
+}
+
+h4 {
+    font-size: 17px;
+    color: #F97300;
+}
+
+/* p {
+    text-align: center;
+    font-size: 35px;
+} */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 64px;
+}
+
+
+/* CARDS */
+.card-container {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.cards {
+    border-radius: 6px;
+    max-width: 350px;
+    background-color: white;
+}
+
+.cards:hover {
+    border: #F97300 solid;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+.card-header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.card-header h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-header p {
+    font-size: 16px;
+}
+
+.card-header .fa {
+    font-size: 30px;
+    color: #F97300;
+    float: left;
+    align-items: center;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+hr {
+    width: 100%;
+    border-radius: 20px black solid;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card-body {
+    padding-left: 20px;
+}
+
+.card-body ul {
+    list-style-type: none;
+}
+
+.card-body ul li {
+    margin-bottom: 7px;
+}
+
+.card-body ul li i {
+    margin-right: 10px;
+}
+
+.but {
+    background-color: black;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 11px 76px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-decoration: none;
+
+}
+
+.but:hover {
+    background-color: #F97300;
+}
+
+
+.smart-card>.card-header {}
+
+
+
+
+
+
+/* MEDIA            QUARIES */
+
+@media screen and (min-width:760px) and (max-width:992px) {
+    .header h4 {}
+
+    .header p {
+        font-size: 60px;
+    }
+
+
+}
+
+@media screen and (min-width:992px) and (max-width:1805px) {}
+
+
+
+
+/* -------------------------------------------------------------
+BLOG SECTION
+------------------------------------------------------------- */
+#blog-section {
+    margin-top: 40px;
+}
+
+.blog-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.blog-body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.post {
+    max-width: 320px;
+    margin-bottom: 20px;
+
+}
+
+.post img {
+    border-radius: 6px;
+    /* height: 18vw; */
+    object-fit: cover;
+}
+
+.post h6 {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.post h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.post p {
+    font-size: 16px;
+    font-weight: 200;
+    text-align: start;
+}
+
+
+.blog {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* -------------------------------------------------------------
+aside SECTION
+------------------------------------------------------------- */
+.aside {
+    flex: 0 0 400px;
+}
+
+.aside-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aside-post {
+    /* margin-bottom: 30px; */
+}
+
+.aside-post img {
+    border-radius: 6%;
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-right: 16px;
+}
+
+.aside-post h6 {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.aside-post h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* -------------------------------------------------------------
+aside media quaries
+------------------------------------------------------------- */
+@media screen and (min-width:660px) and (max-width:1080px) {
+    .aside-container {
+        flex-direction: row;
+        /* justify-content: center;
+        align-items: center; */
+        gap: 20px;
+        background-color: #F97300;
+    }
+
+    .aside {
+        flex: 0 0 0;
+    }
+
+    /* .blog{
+        display: block;
+    } */
+}
+
+
+
+/* -------------------------------------------------------------
+CONTACT SECTION
+------------------------------------------------------------- */
+#contact {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    /* padding: 0 10%; */
+    margin-top: 35px;
+    background-color: #0C0C0C;
+}
+
+.contact-body {
+    flex-basis: 400px;
+    padding-top: 20px;
+}
+
+.contact-body p {
+    font-size: 16;
+    font-weight: 200;
+    margin-top: 30px;
+}
+
+.contact-body p,
+.contact-body h1 {
+    color: #E2DFD0;
+}
+
+.contact-button button {
+    padding: 10px;
+    margin-top: 30px;
+    margin-right: 10px;
+
+}
+
+.contact-form {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea {
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+
+}
+
+input[type="submit"] {
+    padding: 12px 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row input {
+    flex-basis: 47%;
+}
+
+/* -------------------------------------------------------------
+DICOVERY SECTION
+------------------------------------------------------------- */
+.discovery {
+    margin-top: 50px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.discovery-body {
+    max-width: 500px;
+}
+
+.discovery-body p {
+    margin-top: 30px;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+h1 span {
+    display: block;
+    font-size: 16px;
+    font-weight: 200;
+    margin-top: 10px;
+}
+
+.vl {
+    border-left: 3px solid black;
+    height: 50px;
+}
+
+.discovery-image{
+    width: 400px;
+    height: 500px;
+  
+}
+.discovery-image img{
+    border-radius: 6px;
+}
